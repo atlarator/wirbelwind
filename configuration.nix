@@ -10,6 +10,7 @@
       ./boot.nix
       ./hardware-configuration.nix
       ./hydra.nix
+      ./locale.nix
       ./system-packages.nix
     ];
 
@@ -25,6 +26,12 @@
   hardware.bluetooth.enable = true;
   services.power-profiles-daemon.enable = true;
   services.upower.enable = true;
+  networking.nameservers = [ 
+    "100.100.100.100"
+    "8.8.8.8"
+    "4.4.4.4"
+    "1.1.1.1"
+  ];
 
   # Set your time zone.
   time.timeZone = "Asia/Shanghai";

@@ -57,7 +57,6 @@
   ++ [
     # desktop applications
     element-desktop
-    flclash
     ghostty
     google-chrome
     telegram-desktop
