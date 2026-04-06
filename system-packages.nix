@@ -7,6 +7,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    # distro maintaining tools
     arch-install-scripts
     apt
     bird2
@@ -19,12 +20,12 @@
     docker
     fastfetch
     fish
-    flclash
     git
     gnupg
     gtop
     hyfetch
     i2p
+    just
     kitty
     kubectl
     pacman
@@ -36,6 +37,7 @@
     tmux
   ]
   ++ [
+    # Rust utils
     ntpd-rs
     sudo-rs
     uutils-acl
@@ -50,6 +52,15 @@
     uutils-util-linux
   ]
   ++ [
+    # packages from flake
     inputs.helix.packages."${pkgs.stdenv.hostPlatform.system}".helix
+  ]
+  ++ [
+    # desktop applications
+    element-desktop
+    flclash
+    google-chrome
+    telegram-desktop
+    vscode
   ];
 }
