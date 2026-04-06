@@ -26,7 +26,6 @@
     hyfetch
     i2p
     just
-    kitty
     kubectl
     pacman
     pi-coding-agent
@@ -59,6 +58,7 @@
     # desktop applications
     element-desktop
     flclash
+    ghostty
     google-chrome
     telegram-desktop
     vscode

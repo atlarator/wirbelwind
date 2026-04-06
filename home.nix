@@ -78,11 +78,6 @@
     ethtool
     pciutils # lspci
     usbutils # lsusb
-    
-    ghostty
-
-    pnpm
-    nodejs
   ];
 
   # basic configuration of git, please change to your own
@@ -96,13 +91,6 @@
     enable = true;
     enableCompletion = true;
     bashrcExtra = ''
-      # pnpm
-      export PNPM_HOME="/home/lumiere/.local/share/pnpm"
-      case ":$PATH:" in
-        *":$PNPM_HOME:"*) ;;
-        *) export PATH="$PNPM_HOME:$PATH" ;;
-      esac
-      # pnpm end
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
     '';
   };
