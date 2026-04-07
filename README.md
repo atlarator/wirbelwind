@@ -14,7 +14,6 @@ Cleaning garbage in a routine.
 TUI agent coding tools.  
 
 ## TODO
-Chinese & Japanese typing method.  
 Window manager.  
 More desktop IDEs.  
 Gaming Support.  

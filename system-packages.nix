@@ -57,9 +57,19 @@
   ++ [
     # desktop applications
     element-desktop
+    flclash
     ghostty
     google-chrome
+    libreoffice
+    localsend
+    motrix
+    obsidian
+    obs-studio
+    osu-lazer-bin
     telegram-desktop
+    thunderbird
+    steam
     vscode
+    vlc
   ];
 }
