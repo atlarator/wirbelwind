@@ -55,7 +55,8 @@
   ]
   ++ [
     # packages from flake
-    inputs.helix.packages."${pkgs.stdenv.hostPlatform.system}".helix
+    inputs.bento.packages."${pkgs.stdenv.hostPlatform.system}".default
+    inputs.helix.packages."${pkgs.stdenv.hostPlatform.system}".default
     inputs.nix-search-tv.packages.x86_64-linux.default
   ]
   ++ [

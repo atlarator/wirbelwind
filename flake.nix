@@ -12,7 +12,9 @@
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    helix.url = "github:helix-editor/helix/master";
+    bento.url = "github:rapenne-s/bento";
+    helix.url = "github:helix-editor/helix";
+    microvm.url = "github:microvm-nix/microvm.nix";
     nix-search-tv.url = "github:3timeslazy/nix-search-tv";
   };
 
