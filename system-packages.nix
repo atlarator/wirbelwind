@@ -10,6 +10,7 @@
     # distro maintaining tools
     arch-install-scripts
     apt
+    bat
     bird2
     btop
     caddy
@@ -19,6 +20,7 @@
     debootstrap
     docker
     fastfetch
+    fd
     fish
     git
     gnupg
@@ -33,6 +35,7 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     virtualbox
     wget
+    television
     tmux
   ]
   ++ [
@@ -53,6 +56,7 @@
   ++ [
     # packages from flake
     inputs.helix.packages."${pkgs.stdenv.hostPlatform.system}".helix
+    inputs.nix-search-tv.packages.x86_64-linux.default
   ]
   ++ [
     # desktop applications

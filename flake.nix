@@ -13,10 +13,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     helix.url = "github:helix-editor/helix/master";
+    nix-search-tv.url = "github:3timeslazy/nix-search-tv";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
-    
+  outputs = {
+    self,
+    nixpkgs,
+    home-manager,
+    ...
+  }@inputs: {
     nixosConfigurations.wirbelwind = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
