@@ -90,21 +90,18 @@
   users.users.lumiere = {
     isNormalUser = true;
     description = "lumiere";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "podman" ];
   };
 
-  virtualisation.docker = {
-    # Consider disabling the system wide Docker daemon
-    enable = true;
-
-    # daemon.settings = {
-      # proxies = {
-      #   http-proxy = "http://127.0.0.1:7890";
-      #   https-proxy = "http://127.0.0.1:7890";
-      # };
-    # };
+  virtualisation = {
+    containers.enable = true;
+    podman = {
+      enable = true;
+      dockerCompat = true;
+      defaultNetwork.settings.dns_enabled = true;
+    };
   };
-  
+    
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"

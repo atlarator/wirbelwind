@@ -91,6 +91,7 @@
     enable = true;
     enableCompletion = true;
     bashrcExtra = ''
+      alias docker="podman"
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
     '';
   };

@@ -18,7 +18,7 @@
     claude-code
     debian-devscripts
     debootstrap
-    docker
+    distrobox
     fastfetch
     fd
     fish
@@ -29,7 +29,9 @@
     i2p
     just
     kubectl
+    mesa
     pacman
+    podman
     pi-coding-agent
     wireguard-tools
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
@@ -73,6 +75,7 @@
     osu-lazer-bin
     telegram-desktop
     thunderbird
+    tor-browser
     steam
     vscode
     vlc
