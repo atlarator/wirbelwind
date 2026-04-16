@@ -15,7 +15,6 @@
     btop
     caddy
     ciel
-    claude-code
     debian-devscripts
     debootstrap
     distrobox
@@ -30,12 +29,14 @@
     just
     kubectl
     mesa
+    minikube
+    nixpkgs-vet
+    opencode
     pacman
     podman
     pi-coding-agent
     wireguard-tools
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    virtualbox
+    vim
     wget
     television
     tmux
@@ -57,6 +58,7 @@
   ]
   ++ [
     # packages from flake
+    inputs.attic.packages."${pkgs.stdenv.hostPlatform.system}".default
     inputs.bento.packages."${pkgs.stdenv.hostPlatform.system}".default
     inputs.helix.packages."${pkgs.stdenv.hostPlatform.system}".default
     inputs.nix-search-tv.packages.x86_64-linux.default

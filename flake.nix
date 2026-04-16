@@ -12,6 +12,7 @@
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    attic.url = "github:zhaofengli/attic";
     bento.url = "github:rapenne-s/bento";
     helix.url = "github:helix-editor/helix";
     microvm.url = "github:microvm-nix/microvm.nix";
