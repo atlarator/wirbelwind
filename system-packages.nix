@@ -31,6 +31,7 @@
     mesa
     minikube
     nixpkgs-vet
+    ollama
     opencode
     pacman
     podman
