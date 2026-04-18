@@ -18,6 +18,7 @@
     debian-devscripts
     debootstrap
     distrobox
+    duf
     fastfetch
     fd
     fish
@@ -31,6 +32,7 @@
     mesa
     minikube
     nixpkgs-vet
+    nvtopPackages.full
     ollama
     opencode
     pacman

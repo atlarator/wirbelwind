@@ -148,6 +148,17 @@
     enable = true;
   };
 
+  hardware.graphics.enable = true;
+  services.xserver.videoDrivers = [ "nvidia" ];
+  hardware.nvidia.open = false;
+
+  hardware.nvidia.prime = {
+    reverseSync.enable = true;
+    
+    nvidiaBusId = "PCI:01@0:0:0";
+    amdgpuBusId = "PCI:65@0:0:0";
+  };
+  
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
