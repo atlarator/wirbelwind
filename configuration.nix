@@ -127,6 +127,10 @@
 
   # List services that you want to enable:
 
+  services.fwupd = {
+    enable = true;
+  };
+  
   # Enable the OpenSSH daemon.
   services.openssh = {
       enable = true;

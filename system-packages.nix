@@ -21,6 +21,7 @@
     duf
     fastfetch
     fd
+    fwupd
     fish
     git
     gnupg

@@ -16,6 +16,8 @@
       };
     }
   ];
+
+  boot.enableContainers = true;
   
   nix.gc = {
     automatic = true;
