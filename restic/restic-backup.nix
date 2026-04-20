@@ -1,15 +1,15 @@
 { config, pkgs, ... }:
 
 {
-  systemd.user.services.restic-backup = {
+  systemd.services.restic-backup = {
     description = "Restic system backup on mechabackup";
     serviceConfig = {
       Type = "oneshot"; # Changed to oneshot since it's a recurring task
-      ExecStart = "/run/current-system/sw/bin/restic backup /home/lumiere -r /mechabackup/";
+      ExecStart = "/run/current-system/sw/bin/restic backup /home/lumiere -r /mechabackup/ --insecure-no-password";
     };
   };
 
-  systemd.user.timers.restic-backup = {
+  systemd.timers.restic-backup = {
     wantedBy = [ "timers.target" ];
     timerConfig = {
       OnCalendar = "*-*-* 03:00:00";
