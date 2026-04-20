@@ -27,7 +27,7 @@
     gnupg
     gtop
     hyfetch
-    i2p
+    ioztat
     just
     kubectl
     mesa
@@ -39,6 +39,7 @@
     pacman
     podman
     pi-coding-agent
+    restic
     wireguard-tools
     vim
     wget
@@ -73,6 +74,7 @@
     flclash
     ghostty
     google-chrome
+    kopia-ui
     libreoffice
     localsend
     motrix

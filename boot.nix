@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 
-{
+{ 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.systemd-boot.configurationLimit = 10;
@@ -26,4 +26,8 @@
   };
 
   nix.settings.auto-optimise-store = true;
+
+  boot.supportedFilesystems = [ "zfs" ];
+  boot.zfs.forceImportRoot = false;
+  networking.hostId = "78f93405";
 }

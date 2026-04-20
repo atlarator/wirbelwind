@@ -11,6 +11,7 @@
       ./hardware-configuration.nix
       ./hydra.nix
       ./locale.nix
+      ./restic/restic-backup.nix
       ./system-packages.nix
     ];
 
