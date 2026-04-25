@@ -24,6 +24,7 @@
     fwupd
     fish
     git
+    git-absorb
     gnupg
     gtop
     hyfetch
@@ -40,6 +41,7 @@
     podman
     pi-coding-agent
     restic
+    wgpu-utils
     wireguard-tools
     vim
     wget
