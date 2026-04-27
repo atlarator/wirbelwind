@@ -11,6 +11,7 @@
     arch-install-scripts
     apt
     bat
+    binwalk
     bird2
     btop
     caddy
@@ -82,6 +83,7 @@
     motrix
     obsidian
     obs-studio
+    onlyoffice-desktopeditors
     osu-lazer-bin
     telegram-desktop
     thunderbird

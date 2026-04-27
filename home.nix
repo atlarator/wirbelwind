@@ -92,6 +92,7 @@
     enableCompletion = true;
     bashrcExtra = ''
       alias docker="podman"
+      alias AOSC="docker run --rm -it aosc/aosc-os:latest bash && docker rmi aosc/aosc-os:latest"
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
     '';
   };
