@@ -8,10 +8,12 @@
   imports =
     [ # Include the results of the hardware scan.
       ./boot.nix
+      ./grafana/grafana.nix
       ./hardware-configuration.nix
       ./hydra.nix
       ./locale.nix
       ./restic/restic-backup.nix
+      ./sillytavern/sillytavern.nix
       ./system-packages.nix
     ];
 
@@ -95,7 +97,10 @@
   };
 
   virtualisation = {
-    containers.enable = true;
+    containers = {
+      enable = true;
+      registries.search = [ "docker.io" ];
+    };
     podman = {
       enable = true;
       dockerCompat = true;

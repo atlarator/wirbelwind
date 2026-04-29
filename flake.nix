@@ -15,6 +15,7 @@
     attic.url = "github:zhaofengli/attic";
     bento.url = "github:rapenne-s/bento";
     helix.url = "github:helix-editor/helix";
+    llama-cpp.url = "github:ggml-org/llama.cpp";
     microvm.url = "github:microvm-nix/microvm.nix";
     nix-search-tv.url = "github:3timeslazy/nix-search-tv";
   };

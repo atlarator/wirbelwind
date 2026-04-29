@@ -27,6 +27,14 @@
 
   nix.settings.auto-optimise-store = true;
 
+  boot.binfmt = {
+    emulatedSystems = [
+      "aarch64-linux"
+      "riscv64-linux"
+    ];
+    preferStaticEmulators = true; # required to work with podman
+  };
+  
   boot.supportedFilesystems = [ "zfs" ];
   boot.zfs.forceImportRoot = false;
   networking.hostId = "78f93405";
