@@ -12,9 +12,11 @@ Using flakes for my home network environment is relatively stable and reliable (
 Full Rust utilities.  
 Cleaning garbage in a routine.  
 TUI agent coding tools.  
+A hydra build machine at localhost:3000.  
+A grafana monitor at localhost:3500.  
+A sillytavern AI frontend at localhost:8000.  
 
 ## TODO
-Window manager.  
 More desktop IDEs.  
 Gaming Support.  
 
