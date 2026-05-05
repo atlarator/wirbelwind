@@ -16,6 +16,7 @@
     btop
     caddy
     ciel
+    clang
     debian-devscripts
     debootstrap
     distrobox
@@ -43,6 +44,7 @@
     podman
     pi-coding-agent
     quickemu
+    pyinfra
     restic
     wgpu-utils
     wireguard-tools
